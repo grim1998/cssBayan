@@ -74,16 +74,33 @@ img{
 
 .boian:checked + label + .box {
     display: block; 
-     animation: ease-in 1s; 
+    opacity:0; 
+    transition: 1s; 
+    animation: show 1s 1; 
+    animation-fill-mode: forwards; 
+   
 }
 .demo{
     cursor: pointer;
 }
 
+@keyframes show{
+    0%{
+    opacity:0;
+    }
+    100% {
+    opacity:1;
+    }
+}
 
 .boian:hover + label + .box {
     display: block; 
-    animation: ease-in 1s; 
+     opacity:0; 
+    transition: 1s; 
+    animation: show 1s 1; 
+    animation-fill-mode: forwards; 
+   
+    
     
 }
 
@@ -138,4 +155,5 @@ img{
     }
    
 }
+
 
